@@ -9,8 +9,8 @@ Clonar el repositorio:** Abre tu terminal y clona el repositorio usando el sigui
 git clone https://github.com/beenjaminAM/CHECKERS.git
 
 ## Instalación
-cd CHECKERS
-pip install pygame
+### cd CHECKERS
+### pip install pygame
 ## Ejecucion
 
 python main.py
