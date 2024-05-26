@@ -30,7 +30,6 @@ class Board:
         ]
         pieces_red = self.get_all_pieces(RED)
         pieces_white = self.get_all_pieces(WHITE)
-        pieces_red[0].row, pieces_red[0].col = 1, 2
         evaluacion_white = 0
         evaluacion_red = 0
         for piece_white in pieces_white:
