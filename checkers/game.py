@@ -28,6 +28,7 @@ class Game:
         if self.selected:
             result = self._move(row, col)
             if not result:# row col not valid
+                self.valid_moves = {}
                 self.selected = None#Try to select a different
                 self.select(row, col)#re select
 
@@ -64,3 +65,11 @@ class Game:
             self.turn = WHITE
         else:
             self.turn = RED    
+
+    def get_board(self):
+        return self.board
+    
+    def ai_move(self, board):
+        self.board = board
+        self.change_turn()
+        
